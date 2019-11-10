@@ -1,0 +1,10 @@
+licznik = 1
+sumatemp = 0
+while licznik <= 7:
+    pogoda = int(input("Podaj temperature:"))
+    print(f"Dnia {licznik} pogoda wynosiła: {pogoda} stopni Celcjusza")
+    sumatemp += pogoda
+
+    if licznik == 7:
+        print(f"Średnia temperatura w tygodniu wynoisła: {sumatemp/licznik:.2F} stopni Celcjusza")
+    licznik += 1
