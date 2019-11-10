@@ -25,3 +25,4 @@ if minimalna != "brak":
 else:
     print("Nie podałeś żadnych liczb")
 
+MOGE WSZYSTKIE "BRAK" ZAMIENIĆ NA NONE
