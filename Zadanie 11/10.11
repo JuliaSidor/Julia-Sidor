@@ -1,0 +1,34 @@
+pozycja_a = int(input("Podaj pozycje gracza X: "))
+pozycja_b = int(input("Podaj pozycję gracza Y:"))
+# lewy gorny rog ( 0-10,90-100)
+# lewy dolny rog (0-10,0-10)
+# prawy gorny rog (90-100,90-100)
+# prawy dolny rog (90-100,0-10)
+
+if 0 <= pozycja_a <= 10:
+     if 90 <= pozycja_b <= 100:
+         print("Gracz znajduję się w lewym górnym rogu")
+     elif 0 <= pozycja_b <= 10:
+         print("Gracz znajduje sie w lewym dolonym rogu")
+     else:
+         print("Gracz znajduje się w lewej krawędzi")
+elif 90 <= pozycja_a <= 100:
+    if 90 <= pozycja_b <= 100:
+        print("Gracz znajduję się w prawym górnym rogu")
+    elif 0 <= pozycja_b <= 10:
+        print("Gracz znajduje sie w prawym dolonym rogu")
+    else:
+        print("Gracz znajduje się w prawej krawędzi")
+elif 10 < pozycja_a < 90:
+    if 90 <= pozycja_b <= 100:
+        print("Gracz znajduję się w górnej krawędzi")
+    elif 0 <= pozycja_b <= 10:
+        print("Gracz znajduje sie w dolnej krawędzi")
+    else:
+        print("Gracz znajduje się w środku")
+else:
+    print("Gracz znajduje się po za planszą")
+
+
+
+
