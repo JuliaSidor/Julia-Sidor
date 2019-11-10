@@ -1,0 +1,25 @@
+minimalna = 0
+maksymalna = 0
+czy_podano_liczbe = False
+
+while True:
+    dana = input("Podaj liczbe lub 'koniec': ")
+
+    if dana == "koniec":
+        break
+
+    if dana == "":
+        print("Nic nie wpisałęś!")
+        continue
+
+    liczba = int(dana)
+
+    if dana < minimalna or not czy_podano_liczbe:
+        minimalna = liczba
+    elif liczba > maksymalna or not czy_podano_liczbe:
+        maksymalna = liczba
+    czy_podano_liczbe = True
+
+if czy_podano_liczbe:
+    print(f"Minimalna to: {minimalna} Maksymalna to: {maksymalna}")
+
