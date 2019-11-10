@@ -1,0 +1,17 @@
+minimalna = 0
+maksymalna = 0
+
+while True:
+    dana = input("Podaj liczbe lub 'koniec': ")
+
+    if dana == "koniec":
+        break
+
+    dana = int(dana)
+
+    if dana < minimalna:
+        minimalna = dana
+    elif dana > maksymalna:
+        maksymalna = dana
+
+print(f"Minimalna to: {minimalna} Maksymalna to: {maksymalna}")
