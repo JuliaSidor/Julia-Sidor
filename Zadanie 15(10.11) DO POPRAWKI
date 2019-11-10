@@ -1,0 +1,37 @@
+import random
+skarb_x = random.randint(0, 10)
+skarb_y = random.randint(0, 10)
+print(skarb_x, skarb_y)
+liczbaruch=0
+play = True
+
+while play:
+    x = int(input("x: "))
+    y = int(input("y: "))
+
+    liczbaruch += 1
+
+    if skarb_x == x and skarb_y == y:
+        print(f"Gratuluje znalazłeś skarb po {liczbaruch} ruchach")
+        play = False
+
+    if x > 10 or x < 0:
+        print("Jesteś po za tablicą")
+        play = False
+    elif y > 10 or y < 0:
+        print("Jesteś po za tablica")
+        play = False
+
+    if skarb_x == x:
+        print("Znajdujesz się na dobrej szerokości ")
+    elif x < skarb_x:
+        print("Idz do przodu ")
+    else:
+        print("Idz do tyłu")
+
+    if skarb_y == y:
+        print("Znajdujesz się na dobrej wysokości")
+    elif y < skarb_y:
+        print("Idz do góry")
+    else:
+        print("Idz do dołu")
