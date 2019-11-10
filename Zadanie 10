@@ -1,0 +1,18 @@
+pierwsza = int(input("Podaj pierwsza liczbe: "))
+druga = int(input("Podaj dtuga liczbe: "))
+rodzaj = input("Podaj rodzaj operacji: ")
+
+if rodzaj == "+":
+    wynik = pierwsza + druga
+    print("Wynik:", wynik)
+elif rodzaj == "-":
+    wynik = pierwsza - druga
+    print("Wynik:", wynik)
+elif rodzaj == "*":
+    wynik = pierwsza * druga
+    print("Wynik:", wynik)
+elif rodzaj == "/" and druga != 0:
+    wynik = pierwsza/druga
+    print("Wynik:", wynik)
+else:
+    print("Podałeś zły znak operacji :(")
