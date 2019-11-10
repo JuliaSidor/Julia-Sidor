@@ -1,0 +1,5 @@
+licznik = 0
+while licznik <= 100:
+    wynik = licznik ** 2
+    print(f"Kwadrat {licznik}:", wynik)
+    licznik = licznik+1
