@@ -1,0 +1,27 @@
+minimalna = "brak"
+maksymalna ="brak"
+
+
+while True:
+    dana = input("Podaj liczbe lub 'koniec': ")
+
+    if dana == "koniec":
+        break
+
+    if dana == "":
+        print("Nic nie wpisałęś!")
+        continue
+
+    liczba = int(dana)
+
+    if minimalna == "brak" or dana < minimalna:
+        minimalna = liczba
+    elif maksymalna == "brak" or liczba > maksymalna:
+        maksymalna = liczba
+   
+
+if minimalna != "brak":
+    print(f"Minimalna to: {minimalna} Maksymalna to: {maksymalna}")
+else:
+    print("Nie podałeś żadnych liczb")
+
