@@ -14,7 +14,7 @@ while True:
 
     liczba = int(dana)
 
-    if minimalna == "brak" or dana < minimalna:
+    if minimalna == "brak" or liczba < minimalna:
         minimalna = liczba
     elif maksymalna == "brak" or liczba > maksymalna:
         maksymalna = liczba
